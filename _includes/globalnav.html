@@ -1,0 +1,20 @@
+<div id="global-nav">
+  <div class="inner">
+    <p><strong>Manjunath Kalburgi</strong> - use CTRL+M to toggle this menu</p>
+
+    <!-- List your pages here -->
+    <ul class="unstyled">
+      <li><a href="index.html">About me</a></li>
+      <li><a href="thanks.html">Courses</a></li>
+	  <li><a href="thanks.html">Registration</a></li>
+	  <li><a href="thanks.html">Sign In</a></li>
+	  <li><a href="thanks.html">Contact me</a></li>
+    </ul>
+
+    <!-- List your page states here -->
+    {% if page.pagestates == "index" %}
+      {% include pagestates/index.html %}
+    {% endif %}
+
+  </div>
+</div>
