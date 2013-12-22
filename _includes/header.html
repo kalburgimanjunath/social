@@ -6,134 +6,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ site.description }}">
 
+    <link rel="stylesheet/less" type="text/css" href="/social/less/style.less" />
     
+    <!--
+    <link rel="stylesheet/less" type="text/css" href="less/style.less" />-->
+    <script src="js/jquery.js" type="text/javascript"></script>
+    
+    <script src="/social/js/less-1.5.0.min.js" type="text/javascript"></script>
+
     <link rel="stylesheet/less" type="text/css" href="less/style.less" />
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
       <script src="js/less-1.5.0.min.js" type="text/javascript"></script>
       <!-- <link href="/font-awesome/css/font-awesome.css" rel="stylesheet"> -->
       <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
-    <style type="text/css">
-    *, *:before, *:after {box-sizing:  border-box !important;}
-
-
-.row {
- -moz-column-width: 18em;
- -webkit-column-width: 18em;
- -moz-column-gap: 1em;
- -webkit-column-gap: 1em; 
-  
-}
-
-.menu-category {
- display: inline-block;
- margin:  0.25rem;
- padding:  1rem;
- width:  100%; 
-}
-    </style>
-
   </head>
 
   <body>
+<nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Pallette</a>
+  </div>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <!-- 
-              <a class="btn btn-navbar" data-toggle="collapse" data-target=".na\
-              v-collapse">
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li class="dropdown" id="menu1">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
+          Social Media
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">Google Plus</a></li>
+          <li class="divider"></li>
+          <li><a href="#">All Social Media</a></li>
+        </ul>
+      </li>
+      <li class="dropdown" id="menu1">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#menu2">
+          Tech
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">Google Plus</a></li>
+          <li class="divider"></li>
+          <li><a href="#">All Social Media</a></li>
+        </ul>
+      </li>
+      <li class="dropdown" id="menu1">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#menu3">
+          Business
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">Google Plus</a></li>
+          <li class="divider"></li>
+          <li><a href="#">All Social Media</a></li>
+        </ul>
+      </li>
+      <li class="dropdown" id="menu1">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#menu4">
+          Entertainment
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">Google Plus</a></li>
+          <li class="divider"></li>
+          <li><a href="#">All Social Media</a></li>
+        </ul>
+      </li>
+      <li class="dropdown" id="menu1">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#menu5">
+          US/UK WorldWide
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">Google Plus</a></li>
+          <li class="divider"></li>
+          <li><a href="#">All Social Media</a></li>
+        </ul>
+      </li>
+      <li class="dropdown" id="menu1">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#menu6">
+          Life Style
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">Google Plus</a></li>
+          <li class="divider"></li>
+          <li><a href="#">All Social Media</a></li>
+        </ul>
+      </li>
+      <li class="dropdown" id="menu1">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#menu7">
+          More
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">Google Plus</a></li>
+          <li class="divider"></li>
+          <li><a href="#">All Social Media</a></li>
+        </ul>
+      </li>
 
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                        </a>
-           -->
-
-           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                
-		
-          <a class="brand" href="/">
-            <!-- 
-                {{ site.name }}
-             -->
-            <i class="fa fa-pagelines"></i> Palette
-            
-          </a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="/course">Home</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+      
+    </ul>
+    <ul class="nav navbar-nav pull-right">
+      <li>
+        <a href="#">Facebook</a>
+      </li>
+      <li>
+        <a href="#">twitter</a>
+      </li>
+      <li>
+        <a href="#">Linkedin</a>
+      </li>
+      <li class="dropdown" id="menu1">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#menu6">
+          S
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    
+    
+  </div><!-- /.navbar-collapse -->
+</nav>
 
     <div class="container">
-
-<div class="menu row">
-    <div class="menu-category list-group ">
-        <div class="menu-category-name list-group-item active">Category</div><a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-    </div>
-
-    <div class="menu-category list-group">
-        <div class="menu-category-name list-group-item active">Category</div><a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-    </div>
-
-    <div class="menu-category list-group">
-        <div class="menu-category-name list-group-item active">Category</div><a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-    </div>
-    <div class="menu-category list-group">
-        <div class="menu-category-name list-group-item active">Category</div><a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-    </div>
-    <div class="menu-category list-group">
-        <div class="menu-category-name list-group-item active">Category</div><a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-    </div>
-    <div class="menu-category list-group">
-        <div class="menu-category-name list-group-item active">Category</div><a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-    </div>
-    <div class="menu-category list-group">
-        <div class="menu-category-name list-group-item active">Category</div><a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-        <a href="#" class="menu-item list-group-item">Lorem ipsum.<span class="badge">€ 0.00</span></a>
-    </div>
-</div>
-</div>
-
